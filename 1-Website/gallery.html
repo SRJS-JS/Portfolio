@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>S&R - Gallery</title>
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+<link href="css/gallery.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/vue8ygx.css">
+</head>
+
+<body>
+<!--	header    &   themebutton   -->
+		<div id="heada">
+			<div>
+				<a href="index.html"><img src="./images/logo.png" style="height: 75px; width: 75px; display: inline; opacity: 1"></a>
+				<span class="heading" id="sr">S&R</span>
+			</div>
+			<div id="linkbtns">
+				<a id="home" href="index.html">HOME</a>
+				<a id="about" href="about.html">ABOUT</a>
+				<a id="gall" href="gallery.html">GALLERY</a>
+				<a id="cont" href="contact.html">CONTACT</a>
+			</div>
+			
+			<div id="menu" onClick=menu()>
+				<div id="bar1"></div>
+				<div id="bar2"></div>
+				<div id="bar3"></div>
+			</div>
+			
+			
+		</div>
+		<div id="menu2">
+			<a id="home2">Home</a>
+			<a id="about2">About</a>
+			<a id="gallery2">Gallery</a>
+			<a id="contact2">Contact</a>
+		</div>
+	
+
+		
+		
+	
+	<div id="themechanger" onClick=clickTheme()>
+		<img src="images/moon.png" id="imgy">
+	</div>
+	
+<!--     Rest of the Code     -->
+
+	<div id="page">
+		<h1>Gallery</h1>
+
+		<div id="JSQL">
+			<div id="sql" class="galp left">
+				<h2>SQL</h2>
+				<div class="makescroll">
+					<img src="images/gallery/sql/sql-1.png" onclick="pv('Returns all rows and columns from the CUSTOMER table if the CREDIT_LIMIT exceeds 7500 and the REP_NUM is		30 or 40 or 45 or 50 or 55.')">
+					<img src="images/gallery/sql/sql-2.png" onclick="pv('Finds the average balance of the customers.')">
+					<img src="images/gallery/sql/sql-3.png" onclick="pv('Returns the average balance when the balance exceeds 2000.')">
+					<img src="images/gallery/sql/sql-4.png" onclick="pv('Finds the average commission from the REP table')">
+					<img src="images/gallery/sql/sql-5.png" onclick="pv('Returns all the customers who live in Mesa, California.')">
+					<img src="images/gallery/sql/sql-6.png" onclick="pv('Returns howmany rows are in the CUSTOMER table.')">
+					<img src="images/gallery/sql/sql-7.png" onclick="pv('Finds the customer_num if the customer is \'Cards and More\'')">
+					<img src="images/gallery/sql/sql-8.png" onclick="pv('Gets only the descriptions from the ITEM table.')">
+				</div>
+			</div>
+			<div id="JavaScript" class="galp">
+				<h2> JavaScript</h2>
+				<div class="makescroll">
+					<img src="images/gallery/javascript/javascript-1.png" onClick="pv('You give it 10 numbers, it tells you how many of them are even and how many are odd numbers.')">
+					<img src="images/gallery/javascript/javascript-2.png" onClick="pv('Checks if you have an even number of brothers and sisters.')">
+					<img src="images/gallery/javascript/javascript-3.png" onClick="pv('Simulates prime savings if member or if not.')"> 
+					<img src="images/gallery/javascript/javascript-4.png" onClick="pv('Purchasing boxes of chips')">   
+					<img src="images/gallery/javascript/javascript-5.png" onClick="pv('Data Management with CSV files and JS.')">  
+					<img src="images/gallery/javascript/javascript-6.png" onClick="pv('I am managing inventory and purchasing using JavaScript.')">  
+					<img src="images/gallery/javascript/javascript-7.png" onClick="pv('I am processing words using JavaScript.')">  
+					<img src="images/gallery/javascript/javascript-8.png" onClick="pv('I am using random numbers in JavaScript.')">  
+				</div>
+			</div>
+		<div id="Python" class="galp left">
+			<h2>Python</h2>
+			<div class="makescroll">
+				<img src="images/gallery/python/python-1.png" onclick="pv('This is a program that accepts two integers.')">
+				<img src="images/gallery/python/python-2.png" onclick="pv('This accepts four values that are all integers.')">
+				<img src="images/gallery/python/python-3.png" onclick="pv('This calculates the Pythagorean Theorem, also finds side C.')">
+				<img src="images/gallery/python/python-4.png" onclick="pv('Accepts two intgeers and prints on seperate lines.')">
+				<img src="images/gallery/python/python-5.png" onclick="pv('Accepts three intgeers and prints on seperate lines.')">
+				<img src="images/gallery/python/python-6.png" onclick="pv('Accepts two integers and prints each.')">
+				<img src="images/gallery/python/python-7.png" onclick="pv('Accepts two integers, while also determining the greatest integer.')">
+				<img src="images/gallery/python/python-8.png" onclick="pv('Accepts three integers, while also determining the greatest integer.')">
+			</div>
+		</div>
+		<div id="CodeHS" class="galp">
+			<h2>CodeHS</h2>
+			<div class="makescroll">
+				<img src="images/gallery/codehs/codehs-1.png" onclick="pv('Walking back to the ball.')">
+				<img src="images/gallery/codehs/codehs-2.png" onclick="pv('Climbing up by 3 and placing balls.')">
+				<img src="images/gallery/codehs/codehs-3.png" onclick="pv('Making Karel turn around.')">
+				<img src="images/gallery/codehs/codehs-4.png" onclick="pv('Making Karel jump over obstacles.')">
+				<img src="images/gallery/codehs/codehs-5.png" onclick="pv('Using functions to make Karel jump over barriers.')">
+				<img src="images/gallery/codehs/codehs-6.png" onclick="pv('Using a for loop to place multiple balls.')">
+				<img src="images/gallery/codehs/codehs-7.png" onclick="pv('Cleaning everything using function with while loop.')">
+				<img src="images/gallery/codehs/codehs-8.png" onclick="pv('Moving a entire tennis ball stack.')">
+			</div>
+		</div>
+		</div>
+
+		<div id="Photoshop" class="galp">
+			<h2>PHOTOSHOP</h2>
+			<img src="images/gallery/photoshop/photoshop-1.png" width="40%" onclick="pv('A Photoshop edit for the Autumnal Equinox, with 5 images related to it.')">
+			<img src="images/gallery/photoshop/photoshop-2.png" width="40%" onclick="pv('A Photoshop edit for Climate March, with 3 images related to it.')">
+			<img src="images/gallery/photoshop/photoshop-3.png" width="40%" onclick="pv('A Photoshop edit for the self-driving vehicles, with 3 images related to it.')">
+			<img src="images/gallery/photoshop/photoshop-4.png" width="40%" onclick="pv('A Photoshop edit for the the Emmys, with 3 images related to it.')">
+			<img src="images/gallery/photoshop/photoshop-5.png" width="40%" onclick="pv('A Photoshop edit for Fashion Week, with 3 images related to it.')">
+			<img src="images/gallery/photoshop/photoshop-6.png" width="40%" onclick="pv('A Photoshop edit for the IKEA, with 4 images related to it.')">
+			<img src="images/gallery/photoshop/photoshop-7.png" width="40%" onclick="pv('A Photoshop edit for Leaves, with 3 images related to it.')">
+			<img src="images/gallery/photoshop/photoshop-8.png" width="40%" onclick="pv('A Photoshop edit for Phones, with 4 images related to it.')">
+		</div>
+	</div>
+	
+	<div id="picview" onClick=closePic()>
+		<div id="divipic">
+			<img src="images/gallery/photoshop/photoshop-1.png" id="picimg" width="100%">
+		</div>
+		
+		<div id="divsent">
+			<p id="sent">This is a pciture of a Autumnal Equinox made in Photoshop</p>
+		</div>
+	</div>
+	<script src="main.js"></script>
+	<script src="gallery.js"></script>
+</body>
+</html>

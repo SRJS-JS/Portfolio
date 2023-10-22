@@ -1,0 +1,303 @@
+:root {
+	--heightpx: 75px;
+	--headfontsize: 20px;
+	--whitegreen: #e1fff3;
+}
+
+* {
+
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	scroll-behavior: smooth
+}
+
+p, li, ul{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	padding-bottom: 10px;
+	font-size: 20px;
+	font-weight: 300; 
+}
+
+body {
+	background-color: #0a2520;
+	font-size: 30px;
+	display: inline;
+	scroll-behavior: smooth; 
+	transition-duration: 0s;
+	transition-timing-function: ease-in-out;
+	font-family: filicudi-solid, sans-serif;
+}
+
+#linkbtns > *, #heada > * {
+	display: inline;
+}
+
+
+
+#heada {
+	background-color: rgb(33,102,84, .80);
+	height: var(--heightpx);
+	width: 100vw;
+	font-family: filicudi-solid, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: var(--headfontsize);
+	color: white;
+	position: fixed;
+	top: 0;
+	display: inline-block;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	border-bottom-color: #6BFFC5;
+	z-index: 10
+}
+
+#linkbtns {
+	position: absolute;
+	top: 24.5px;
+	right: 35px;
+	width: auto;
+	font-weight: 600;
+	color: white;
+}
+
+#linkbtns > *:visited {
+	color: white;
+}
+
+a {
+	color: inherit
+}
+
+
+#linkbtns > *{
+	position: relative;
+	padding-left: 17.5px;
+	padding-right: 17.5px;
+	transition-timing-function: ease-in;
+	transition-duration: .25s;
+	opacity: 100%;
+}
+
+a {
+	text-decoration: none;
+	text-decoration-color: white
+}
+
+#linkbtns > *:hover{
+	color: #00FFCC;
+	font-size: 25px;
+}
+
+#linkbtns > *:hover #linkbtns{
+	top: 22.5px;
+}
+
+#sr {
+	font-size: 50px;
+	font-weight: 900;
+	position: absolute;
+	left: 90px;
+	opacity: 1;
+	padding-top: 10px;
+}
+
+
+
+
+#menu {
+	width: 75px;
+	height: 50px;
+	position: fixed;
+	right: 0px;
+	top: 0;
+	margin-top: 7.5px;
+	visibility: hidden;
+}
+
+#menu > div {
+	background-color: white;
+	height: 7.5px;
+	width: 50px;
+	margin-top: 8px;
+	cursor: pointer
+}
+
+#menu2 {
+	position: fixed;
+	top: var(--heightpx);
+	right: 0;
+	width: 300px;
+	height: calc(100vh - 75px);
+	background-color: rgba(62,130,103,.90);
+	color: white;
+	font-family: filicudi-solid, sans-serif;;
+	font-size: 30px;
+	text-align: center;
+	font-weight: 600;
+	z-index: 0;
+	right: -300px;
+	transition-duration: .5s;
+	cursor: pointer;
+	z-index: 9;
+	visibility: hidden
+}
+
+#menu2 > a {
+	padding: 10px 0 10px 0;
+	margin: 10px 0 10px 0;
+	display: block;
+}
+
+#menu2 > a:hover {
+	color: #00FFCC;
+}
+
+@media screen and (max-width: 800px) {
+	#linkbtns {
+		visibility: hidden;
+	}
+	#menu {
+		visibility: visible;
+	}
+	#sr {
+		font-size: 40px;
+		padding-top: 8.75px;
+	}
+	#menu2 {
+		visibility: visible;
+	}
+}
+
+#themechanger {
+	position: fixed;
+	top: 75vh;
+	background-color: white;
+	width: 30px;
+	height: 60px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #030F0D;
+	border-style: solid;
+	border-left-style: none;
+	border-width: 2px;
+	border-color: rgba(107,255,197,1.00);
+	cursor: pointer;
+}
+
+#themechanger > img{
+	width: 30px;
+	margin-top: 17.5px;
+}
+
+h2, h3, h4, h5, h6 {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	position: static;
+}
+
+h2 {
+	font-size: 45px;
+	margin: 10px
+}
+
+h3 {
+	font-size: 37.5px;
+}
+
+h1 {
+	display: block; 
+	text-align: center;
+	margin: 0 auto 0 auto;
+	background-color: rgba(10,77,64,0.63);
+	width: calc(100%-3px);
+	border-radius: 10px;
+	border-style: solid;
+	padding: 12.5px 0;
+	font-size: 55px !important;
+	border-color:rgba(107,255,197,1.00);
+	color: var(--whitegreen);
+}
+
+#page {
+	position: absolute;
+	top: 120px;
+	font-family: filicudi-solid, sans-serif;
+	font-weight: 600;
+	font-size: 4vh;
+	width: 80vw;
+	height: calc(100% - 120px);
+	left: 10vw;
+}
+
+#page > div {
+	display: inline-block;
+}
+
+#picview {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.87);
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	transition-timing-function: linear;
+	visibility: hidden;
+}
+
+
+#divipic {
+	overflow-y: scroll;
+	width: 50vw;
+	height: 60vh;
+	margin-left: auto; 
+	margin-right: auto; 
+	scroll-behavior: smooth;
+	margin-top: 50px;
+
+}
+
+#divsent {
+	background-color: transparent;
+	height: 25vh;
+	width: 100vw;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 101;
+	width: 80vw;
+	left: 10vw;
+
+}
+
+#sent {
+	font-size: 30px;
+	padding: 20px;
+	color: white;
+	text-align: center;
+	
+}
+
+#picimg {
+	border-style: solid;
+	border-width: 5px;
+	margin: 0 auto;
+	width: calc(75% - 10px);
+	pointer-events: none;
+	margin-left: 12.5%;
+}
+
+
+
+
+
+/*Scrollbar Settings*/
+
+::-webkit-scrollbar {
+	width: 3px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #56DAA980;
+}

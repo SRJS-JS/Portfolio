@@ -1,0 +1,113 @@
+:root {
+	--whitegreen: #e1fff3;
+}
+
+* {
+	color: var(--whitegreen);
+}
+
+body {
+	overflow-y: scroll
+}
+
+
+
+
+
+
+#page > div, #sql, div#JSQL > div {
+	background-color: rgba(10,77,64,0.63);
+	border-radius: 10px;
+	margin-top: 30px;
+	width: calc(32.5% - 3px);
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 20px;
+	z-index: 0;
+	position: relative;
+	float: left;
+	border-width: 3px;
+	border-style: solid;
+	border-color:rgba(107,255,197,1.00);
+	color: rgba(107,255,197,1.00);
+	display: block;
+	width: 100%
+	
+}
+
+h2 {
+	display: block;
+	width: calc(100% - 3px)
+}
+
+#Photoshop {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.galp > img, .galp > div > img {
+	width: 300px;
+	margin: 1%;
+	border-radius: 15px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: white;
+	opacity: 80%
+}
+
+div#JSQL > div {
+	width: calc(49% - 6px);
+	position: relative;
+	float: right;
+	display: inline-block;
+	height: 500px;
+}
+
+div > div#sql {
+	float: left;
+}
+
+
+div#JSQL {
+	text-align: center;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+#sql > div > img {
+	width: 75%
+}
+
+
+div.makescroll {
+	overflow-y: scroll !important;
+	height: calc(100% - 55px) !important;
+}
+
+#JavaScript > .makescroll > img, #Python > .makescroll > img, #CodeHS > div > img {
+	width: 60% !important;
+}
+
+div > div#CodeHS {
+	float: left
+}
+
+img {
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px) {
+	.galp > img {
+		width: 175px
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.galp {
+		width: calc(100% - 3px) !important;
+	}
+}
